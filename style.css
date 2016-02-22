@@ -1,0 +1,101 @@
+.nav {
+  position:relative;
+  display:inline-block;
+  font-size:14px;
+  font-weight:900;
+}
+.nav-list {
+
+}
+.nav-item {
+  float:left;
+  display:inline;
+  zoom:1;
+}
+.nav-item a {
+  display:block;
+  padding:15px 20px;
+  color:#FFF;
+  background:#34495E;
+}
+.nav-item:first-child a {
+  border-radius:5px 0 0 5px;
+}
+.nav-item:last-child a {
+  border-radius:0 5px 5px 0;
+}
+.nav-item a:hover {
+  background:#2C3E50;
+}
+.nav-mobile {
+   /* Hide from browsers that don't support media queries*/
+
+  position:absolute;
+  top:0;
+  left:0;
+  background: url("https://cdn4.iconfinder.com/data/icons/flat-black/128/menu.png") no-repeat center center;
+  height:40px;
+  width:40px;
+  border-radius:5px;
+
+}
+body {
+  background-color: grey
+}
+/* Tablet-portrait*/
+@media only screen and (max-width: 768px){
+  body {
+    background-color: yellow;
+  }
+}
+
+/* Small-tablet*/
+@media only screen and (max-width: 600px){
+  body {
+    background-color: blue;
+  }
+}
+
+/* mobile-landscape*/
+@media only screen and (max-width: 480px){
+  body {
+    background-color: green;
+  }
+}
+/* mobile-portrait*/
+@media only screen and (max-width: 320px){
+  body {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    width:100%;
+  }
+  .nav-item {
+    width:100%;
+    float:none;
+  }
+  .nav-mobile {
+    display:block;
+  }
+  .nav-list {
+    display:none;
+  }
+}
+@media only screen and (min-width: 768px) {
+
+  .nav-mobile {
+    display:none;
+  }
+  .nav-list{
+    display: inline-block;
+  }
+}
+
+/*320 px—Mobile portrait
+480 px—Mobile landscape
+600 px—Small tablet
+768 px—Tablet portrait
+1024 px—Tablet landscape & Laptop
+1280 px and up—Desktop*/
